@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Desafio 2 Decisiones</title>
+  </head>
+  <body>
+    <!--Requrimiento # 1-->
+    <h1>Requerimiento # 1</h1>
+    <div class="foto">
+      <img
+        id="imagen"
+        src="./assets/img/img1.jpg"
+        width="400px"
+        onclick="
+        let imagen = document.querySelector('#imagen')
+
+       if( style.border === '2px solid red'){
+        style.border=''
+       }else{
+        style.border = '2px solid red'
+       }
+        "
+      />
+      <p>Haga click en la imagen para colocarle el borde</p>
+    </div>
+    
+    <br />
+    <!--Requrimiento # 2-->
+    <h1>Requerimiento # 2</h1>
+
+    <h2>Pedido de Stickers</h2>
+    <div class="container">
+      <div class="box">
+        <h2>Sticker Tipo A</h2>
+        <img src="./assets/img/HTML.jpeg" alt="Sticker Tipo A" />
+        <label for="stickerA">Cantidad:</label>
+        <input type="number" id="stickerA" min="0" max="10" />
+      </div>
+
+      <div class="box">
+        <h2>Sticker Tipo B</h2>
+        <img src="./assets/img/CSS.jpg" alt="Sticker Tipo B" />
+        <label for="stickerB">Cantidad:</label>
+        <input type="number" id="stickerB" min="0" max="10" />
+      </div>
+
+      <div class="box">
+        <h2>Sticker Tipo C</h2>
+        <img src="./assets/img/JS.jpg" alt="Sticker Tipo C" />
+        <label for="stickerC">Cantidad:</label>
+        <input type="number" id="stickerC" min="0" max="10" />
+      </div>
+    </div>
+    <button onclick="verificarPedido()">Realizar Pedido</button>
+
+    <p id="mensaje"></p>
+
+    <br />
+    <!-- Requrimiento #3-->
+    <h1>Requerimiento # 3</h1>
+
+    <div class="container-s">
+      <h2>Ingresar Password</h2>
+      <div class="select">
+        <select id="numero1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select id="numero2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select id="numero3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+      <div class="btn">
+        <button onclick="validarpassword()">Validar Password</button>
+        <p id="mensajes"></p>
+      </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
